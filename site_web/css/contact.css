@@ -1,0 +1,96 @@
+html {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.flex{
+    display: flex;
+}
+body{
+    font-family: 'Cantarell', sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("../picture/fond_contact.jpg") no-repeat center fixed; ;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-grow:1;
+}
+main section{
+    width: 30%;
+}
+main form{
+    border:  solid #383d41;
+    background-color: rgba(255, 255, 255, 0.71);
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 4%;
+}
+main input, main textarea{
+    margin: 10px;
+    font-size: 2rem;
+}
+main label{
+    font-size: 2rem;
+}
+
+input[type="submit"]{
+    border-radius:12px 0 12px 0;
+    border:none;
+    color: rgba(255, 255, 255, 1);
+    background: -webkit-linear-gradient(90deg, rgba(159,173,189,0.5) 0, rgba(41,73,101,0.7) 50%, hsla(208, 42%, 28%, 0.7) 93%, rgba(0,0,0,0.54) 100%);
+    background: -moz-linear-gradient(0deg, rgba(159,173,189,0.5) 0, rgba(41,73,101,0.7) 50%, hsla(208, 42%, 28%, 0.7) 93%, rgba(0,0,0,0.54) 100%);
+    background: linear-gradient(0deg, rgba(159,173,189,0.5) 0, rgba(41,73,101,0.7) 50%, hsla(208, 42%, 28%, 0.7) 93%, rgba(0,0,0,0.54) 100%);
+}
+textarea,input[type="email"],input[type="text"]{
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 1px solid #b7b7b7;
+    -webkit-border-radius: 3px;
+    border-radius: 20px;
+    color: white;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: -webkit-linear-gradient(90deg, rgba(159,173,189,0.5) 0, rgba(41,73,101,0.7) 50%, hsla(208, 42%, 28%, 0.7) 93%, rgba(0,0,0,0.54) 100%);
+    background: -moz-linear-gradient(0deg, rgba(159,173,189,0.5) 0, rgba(41,73,101,0.7) 50%, hsla(208, 42%, 28%, 0.7) 93%, rgba(0,0,0,0.54) 100%);
+    background: linear-gradient(0deg, rgba(159,173,189,0.5) 0, rgba(41,73,101,0.7) 50%, hsla(208, 42%, 28%, 0.7) 93%, rgba(0,0,0,0.54) 100%);
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+}
+::placeholder{
+    color: white;
+}
+input:focus,textarea:focus {
+    outline: none;
+}
+@media screen and (max-width: 640px) {
+    main{
+        margin-top: 50px;
+    }
+    main section{
+        width: 90%;
+    }
+    main label {
+        font-size: 2rem;
+        margin: 0;
+    }
+}

@@ -1,0 +1,93 @@
+html {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    min-height:100%;
+
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.flex{
+    display: flex;
+}
+body{
+    font-family: 'Cantarell', sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("../picture/fond_projet.jpg") no-repeat center fixed; ;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+main{
+    flex-grow:1;
+
+}
+main section {
+    margin-top: 3%;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+h1{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 3rem;
+}
+ article{
+     position: relative;
+     height: 30vh;
+     width: 20%;
+     z-index: 1;
+ }
+ article img{
+     width: 100%;
+     height: 30vh;
+     border: 3px solid #5a5a5a;
+     -webkit-box-shadow: -1px 72px 128px -39px rgba(0,0,0,1);
+     -moz-box-shadow: -1px 72px 128px -39px rgba(0,0,0,1);
+     box-shadow: -1px 72px 128px -39px rgba(0,0,0,1);
+ }
+ h2{
+     text-align: center;
+     font-size: 4rem;
+     font-weight: bold;
+     font-variant-caps: small-caps;
+     position: absolute;
+     z-index: 2;
+     color: black;
+     top: 50%; left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+ }
+
+ article:hover h2{
+     color: rgba(70, 75, 75, 0.83);
+ }
+ article:hover img{
+     opacity: 0.5;
+ }
+
+
+/*------------------------tablette-------------------*/
+@media screen and (max-width: 1024px) {
+    main h1{
+        margin-top: 50px;
+    }
+    article {
+        height: 30vh;
+        width: 35%;
+    }
+}
+@media screen and (max-width: 600px) {
+    article {
+        height: 40vh;
+        width: 90%;
+    }
+}
+
+
+

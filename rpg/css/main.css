@@ -1,0 +1,68 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {font-size: 62.5%}
+
+header h1{
+    text-align: center;
+    font-size: 3rem;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+main section{
+    width: 60%;
+    /*margin: 0 auto;*/
+    text-align: center;
+}
+main section h2{
+    font-size: 2.5rem;
+}
+main section p{
+    font-size: 2rem;
+}
+main button{
+    margin:2px 10px;
+    font-size: 2rem;
+    box-shadow:inset 0px 1px 5px 0px #e6cfd2;
+    background:linear-gradient(to bottom, #3b362b 5%, #9e4a4f 100%);
+    background-color:#3b362b;
+    border-radius:5px;
+    border:1px solid #566963;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    padding:8px 13px;
+    text-decoration:none;
+}
+main button:hover{
+    background:linear-gradient(to bottom, #9e4a4f 5%, #3b362b 100%);
+    background-color:#9e4a4f;
+}
+main button:active{
+    position:relative;
+    top:3px;
+}
+.hero{
+    width: 10%;
+    font-size: 1.9rem;
+    /*position: absolute;*/
+    margin-left: 10px;
+}
+.hero h3,.enemi h3{
+    text-align: center;
+}
+.enemi{
+    /*float: right;*/
+    width: 10%;
+    font-size: 1.9rem;
+    margin-right: 10px;
+}
+.cacher{
+    display: none;
+}

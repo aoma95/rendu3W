@@ -1,0 +1,113 @@
+html {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.flex{
+    display: flex;
+}
+main{
+    flex-grow:1;
+    overflow-x:hidden;
+}
+body{
+    font-family: 'Cantarell', sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("../../picture/fond_blog.jpg") no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+main h1{
+    padding: 0 5%;
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 4rem;
+}
+section h1 + p{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+main section.flex{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main article{
+    border-radius: 30px;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 1px solid #b7b7b7;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: -webkit-linear-gradient(45deg, rgba(160,134,134,0.6) 0, rgba(255,255,255,0.6) 100%);
+    background: -moz-linear-gradient(45deg, rgba(160,134,134,0.6) 0, rgba(255,255,255,0.6) 100%);
+    background: linear-gradient(45deg, rgba(160,134,134,0.6) 0, rgba(255,255,255,0.6) 100%);
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+    -webkit-box-shadow: -4px 6px 7px 0 rgba(0,0,0,0.68) ;
+    box-shadow: -4px 6px 7px 0 rgba(0,0,0,0.68) ;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+    margin:2%;
+    width: 25%;
+}
+main article a{
+    text-decoration: none;
+     text-align: center;
+     color: #000000;
+ }
+main article a:hover h2{
+    color: #464b4b;
+}
+main article a:hover {
+    color: black;
+    text-decoration: none;
+}
+main article h2{
+    margin: 2% 1%;
+    font-size: 2.5rem;
+}
+main article p{
+    padding: 2% 4%;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .flex{
+        flex-direction: column;
+    }
+    main article{
+        width: 90%;
+        margin: 2% auto;
+    }
+    main h1{
+        margin-top: 50px;
+        font-size: 3rem;
+    }
+    main article h2{
+        font-size: 2rem;
+    }
+    main article p {
+        font-size: 1.7rem;
+    }
+
+}
+
+
+
+

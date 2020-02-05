@@ -1,0 +1,69 @@
+// function afficherTaille(mot){ //Affiche la taille du mot
+//     let motTableau = mot.split('');
+//     motTableau.forEach(function (element) { //
+//         let div = document.createElement('div');
+//         div.classList.add('lettre');
+//         if(element==="-"){
+//             div.innerHTML=("-");
+//             div.style.color = "black";
+//         }
+//         else {
+//             div.innerHTML=("0");
+//         }
+//         document.querySelector('main section:nth-of-type(3)').append(div);
+//     });
+// }
+//
+// function choixChiffre(nombreMotDico){
+//     let chiffre = Math.floor(Math.random() * nombreMotDico);
+//     return chiffre;
+// } //choix d'un chiffre pour choisir un mot dans le tableau
+//
+// function choixMot(dico,nombreMot){
+//     let index = choixChiffre(nombreMot);
+//     let mot = dico[index];
+//     dico.splice(index, 1);
+//     return mot.toUpperCase();
+// }
+//
+// function SupprimerDivMot(){
+//     let section = document.querySelector("main section:nth-of-type(3)");
+//     section.innerHTML="";
+// }
+//
+// function alphabetclick(){
+//     alphabet = this.getAttribute("data-alphabet");
+//     testCharactere(alphabet);
+//     this.disabled=true;
+//     return alphabet;
+// }
+//
+// function dispoBouton(tableauButton){
+//     tableauButton.forEach(function (element) {
+//         element.disabled=false;
+//     });
+// }
+//
+// function testCharactere(lettre){
+//     let test = motTableau.indexOf(lettre);
+//     if (test < 0){
+//         tentative++;
+//         pendu.draw(`${tentative-1}`);
+//     }
+//     else{
+//     motTableau.forEach(function (element, index) {
+//         if(element===lettre){
+//             let div =document.querySelector(`main section:nth-of-type(3) div:nth-of-type(${index+1})`);
+//             div.innerHTML=lettre;
+//             div.style.color = "black";
+//         }
+//         });
+//     }
+// }
+// let nombreMot = 22740; //Nombre de mot dans le dico
+// let scoreJoueur1 = 0;
+// let scoreJoueur2 = 0;
+// let scoreOrdi1 = 0;
+// tentative = 0;
+// const pendu = new Pendu("lePendu");
+// let tableauButton=document.querySelectorAll('main section:nth-of-type(4) button');

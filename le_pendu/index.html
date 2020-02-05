@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <title>Jeu du Pendu</title>
+</head>
+<body>
+<main>
+        <h1>Le jeu du Pendu</h1>
+    <section class="regle ">
+        <p>Voici les règles:</p>
+        <ul>
+            <li>Vous avez 9 coups pour trouver le mot</li>
+            <li>Vous gagnez des points en fonction de la taille du mot</li>
+            <li>Vous ne perdez pas de point quand vous ratez</li>
+        </ul>
+        <p>Il existe 2 modes de jeu:</p>
+        <ul>
+            <li>Joueur contre Joueur</li>
+            <li>Joueur contre ordinateur</li>
+        </ul>
+        <button class="ordinateur" data-joueur="Ordinateur">Joueur Vs Ordinateur</button>
+        <button class="joueur" data-joueur="Joueur 2">Joueur Vs Joueur</button>
+    </section>
+    <section class="pendu disparition">
+        <section>
+
+            <article>
+                <p>Score Joueur 1 :</p>
+                <p>0</p>
+            </article>
+            <article>
+                <p></p>
+                <p>0</p>
+            </article>
+            <article>
+            </article>
+        </section>
+        <section>
+        </section>
+        <section>
+        </section>
+        <section>
+            <button data-alphabet="A">A</button>
+            <button data-alphabet="B">B</button>
+            <button data-alphabet="C">C</button>
+            <button data-alphabet="D">D</button>
+            <button data-alphabet="E">E</button>
+            <button data-alphabet="F">F</button>
+            <button data-alphabet="G">G</button>
+            <button data-alphabet="H">H</button>
+            <button data-alphabet="I">I</button>
+            <button data-alphabet="J">J</button>
+            <button data-alphabet="K">K</button>
+            <button data-alphabet="L">L</button>
+            <button data-alphabet="M">M</button>
+            <button data-alphabet="N">N</button>
+            <button data-alphabet="O">O</button>
+            <button data-alphabet="P">P</button>
+            <button data-alphabet="Q">Q</button>
+            <button data-alphabet="R">R</button>
+            <button data-alphabet="S">S</button>
+            <button data-alphabet="T">T</button>
+            <button data-alphabet="U">U</button>
+            <button data-alphabet="V">V</button>
+            <button data-alphabet="W">W</button>
+            <button data-alphabet="X">X</button>
+            <button data-alphabet="Y">Y</button>
+            <button data-alphabet="Z">Z</button>
+        </section>
+        <section>
+        </section>
+    </section>
+</main>
+<script src="js/dico.js"></script>
+<script src="js/penduClass.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

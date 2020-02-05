@@ -1,0 +1,106 @@
+@-moz-keyframes rotation {
+    100% { -moz-transform: rotate(-360deg);
+    }
+}
+@-webkit-keyframes rotation {
+    100% { -webkit-transform: rotate(-360deg);
+    }
+}
+@keyframes rotation {
+    100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg);
+    }
+}
+
+@keyframes cloud {
+    0%{
+        transform: translateX(-60%);
+    }
+    100%{
+        transform: translateX(40%);
+    }
+
+}
+
+html {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.flex{
+    display: flex;
+}
+main{
+    flex-grow:1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+body{
+    /*background-image: url(/picture/fond_acceuil.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    background: url(/picture/fond_acceuil.jpg) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    /*font-family: 'David Libre', serif;*/
+    font-family: 'Cantarell', sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main h1 {
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 1rem 1rem 2rem white, 0 0 1rem white, 0 0 0.2rem white;
+    display: none;
+}
+main article{
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main article>p{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2%;
+    padding: 0 5% ;
+    text-shadow: 1rem 1rem 2rem white, 0 0 1rem white, 0 0 0.2rem white;
+    z-index: 1;
+}
+main section>article>img{
+    max-width: 20%;
+    display: none;
+    -webkit-animation:rotation 8s linear infinite;
+    -moz-animation:rotation 8s linear infinite;
+    animation:rotation 8s linear infinite;
+}
+.cloud1{
+    position: absolute;
+    top:-300px;
+    animation: cloud 20s linear infinite;
+    -webkit-animation:cloud 20s linear infinite;
+    -moz-animation:cloud 20s linear infinite;
+}
+
+@media screen and (max-width: 640px) {
+
+    main section > article > img{
+        order: 1;
+        max-width: 75%;
+    }
+    main article>p{
+        order: 2;
+    }
+    main article> h1{
+        margin: 50px 5%;
+        font-size: 4rem;
+    }
+
+}
