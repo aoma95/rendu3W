@@ -25,7 +25,7 @@ if(isset($_POST["EnvoiMail"])) {
 //    $email->addContent(
 //        "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 //    );
-    $sendgrid = new \SendGrid('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');
+
     //$sendgrid->send($email);
     /*if($sendgrid->send($email));
     {
